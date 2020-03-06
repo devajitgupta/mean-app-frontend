@@ -1,0 +1,36 @@
+body{font-family:Robot  o;}
+.listings{
+display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	li{
+	list-style:none;
+	width:30%;
+	padding:20px;
+	margin:20px;
+	text-align:center;
+	border-radius:10px;
+	box-shadow: 5px 5px 20px 5px rgba(0 ,0,0,0.2);
+	}
+	h5{
+	margin:10px 0;
+	}
+	a{
+	text-align:center;
+	border:1px solid;
+	transition:padding 1s;
+	display:block;
+	line-height:20px;
+	border-radius:30px;
+	text-decoration:none;
+	}
+	a:hover{color:#fff;font-size:30px;font-family: Roboto;padding:10px;background-image: linear-gradient(#c20000,#ff0000);text-align:center;}
+}
+
+.bg-success{
+	padding:10px;
+	}
+	.listing-details{
+	margin-top:20px;
+	text-align:center;
+	}

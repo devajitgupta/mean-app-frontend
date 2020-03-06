@@ -1,0 +1,29 @@
+
+<div class="form-box">
+<div class="container col-lg-12">
+<div class="header col-lg-12">
+	<br>
+	<h1>Register User</h1>
+	<i class="fa fa-user-tie"></i>
+
+<form [formGroup]="registerForm" (ngSubmit)="userRegister()">
+  <div class="form-group">
+  	 <div class="form-group">
+    <label for="exampleInputPassword1">Name:</label>
+    <input type="text" class="form-control" formControlName="name" id="exampleInputPassword1" placeholder="name">
+
+
+  </div>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1"formControlName="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" formControlName="password" placeholder="password">
+  </div>
+  <input type="submit" style="margin-bottom: 20px;"value="Register"[disabled]="!registerForm.valid" class="btn btn-success" >
+</form>
+</div>
+</div>
+</div>

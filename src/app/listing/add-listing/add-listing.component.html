@@ -1,0 +1,28 @@
+<div class="form-box">
+<div class="container col-lg-12">
+<div class="header col-lg-12">
+	<br>
+	<h1>Add-New-Listing</h1>
+
+<form [formGroup]="listingForm" (ngSubmit)="newListing()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title:</label>
+    <input type="text" class="form-control"formControlName="title" placeholder="Title">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Price:</label>
+    <input type="number" class="form-control"formControlName="price" placeholder="Price">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Locality:</label>
+    <input type="text" class="form-control"formControlName="locality" placeholder="Locality">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Details:</label>
+    <input type="password" class="form-control" formControlName="details" placeholder="Details">
+  </div>
+  <input type="submit" style="margin-bottom: 20px;"value="Add Listing"[disabled]="!listingForm.valid" class="btn btn-primary" >
+</form>
+</div>
+</div>
+</div>
